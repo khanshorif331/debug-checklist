@@ -32,17 +32,34 @@
 
 // A call stack is a mechanism for an interpreter (like the JavaScript interpreter in a web browser) to keep track of its place in a script that calls multiple functions — what function is currently being run and what functions are called from within that function, etc.
 
+// If the stack takes up more space than it had assigned to it, it results in a "stack overflow" error.
+
+
 
 
 // ৭. Regular এক্সপ্রেশন কি জিনিস এইটা কি কাজে লাগে?
 
+// regular expression are kind of logics for validate some conditions ....
+// example -------
+
+
 // ৮. Lighthouse ট্যাব দিয়ে কি করে?
 
+// to seee the performance of a website we use this lighthouse tab.it gives us all kind of info about the site.it gives us full report.
+
 // -------------
+
+
+
+
 
 // টাস্ক-১:
 
 // ৯. সিম্পল একটা ওয়েবসাইট বানাও। সেখানে একটি ইনপুট ফিল্ডে ইমেইল লিখবে। তারপর সেটার পাশে একটা submit নামে বাটন আছে। সেই সাবমিট বাটনে চাপ দিলে রেগুলার এক্সপ্রেশন (গুগলে সার্চ দিয়ে বের করবে) দিয়ে চেক করবে এটা ভ্যালিড ইমেইল কিনা। 
+
+
+
+
 
 // ১০.ইমেইল যদি ভ্যালিড হয় তাহলে একটা গ্রীন কালার দিয়ে কোন একটা টেক্সট লিখে দিয়ে বলবে তোমার ইমেইল ঠিক আছে।আর যদি ইমেইল ঠিক না হয়। তাহলে একটা লাল কালারের টেক্সট দিয়ে বলবে।ইমেইল ঠিক নাই। ভালো করে ইমেইল দাও। 
 
