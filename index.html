@@ -5,9 +5,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Task-1</title>
+    <style>
+        #valid{
+            color: green;
+        }
+        #invalid{
+            color: red;
+        }
+    </style>
     <script>
-        
+
         const getEmail = ()=>{
+            
             
             const input = document.getElementById('email')
             const email = input.value
@@ -26,7 +35,10 @@
             else{
                 document.getElementById('invalid').innerText =`Your Email is not valid.Plz enter a valid email`
                 document.getElementById('valid').style.display = 'none'
-            }             
+            }
+            const cont = document.getElementById('content')
+            // console.log(cont.innerHTML);
+            cont.innerHTML = ''             
         };
 
             
