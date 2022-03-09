@@ -4,9 +4,44 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Task-1</title>
+    <script>
+        
+        const getEmail = ()=>{
+            
+            const input = document.getElementById('email')
+            const email = input.value
+            validateEmail(email)
+            
+            
+            // console.log(inputEmail);
+        }
+        const validateEmail = (email) => {
+            const expression =/^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
+            const result = expression.test(email)
+            if(result){
+                document.getElementById('valid').innerText =`Congratulations Your email is valid`
+                document.getElementById('invalid').style.display = 'none'
+            }
+            else{
+                document.getElementById('invalid').innerText =`Your Email is not valid.Plz enter a valid email`
+                document.getElementById('valid').style.display = 'none'
+            }             
+        };
+
+            
+    </script>
 </head>
 <body>
+    <h1>Regular Expression</h1>
+    <input id="email" type="text" placeholder="Enter your Email">
+    <button onclick="getEmail()">Submit</button>
+    <div id="content">
+        <p  id="valid"></p>
+        <p id="invalid"></p>
+    </div>
+
     
+
 </body>
 </html>
